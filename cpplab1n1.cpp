@@ -45,9 +45,9 @@ int main()
 	ConvertTimeTToSystemTime(&st, &tt);
 
 	printf("%4.4d: % 2.2d : % 2.2d: % 2.2d: % 2.2d: % 2.2d\n", st.wYear, st.wMonth, st.wDay, st.wHour, st.wMinute, st.wSecond);
-	int end = clock(); // end time
+	int end = clock(); // end of time
 	int z = (end - start);
-	int t = (end - start) / CLOCKS_PER_SEC;// transmit to sec
+	int t = (end - start) / CLOCKS_PER_SEC;// transmit to second
 	cout << " " << z << " " << t << " " << CLOCKS_PER_SEC;
 
 	cin.get();
